@@ -1,18 +1,20 @@
+#Switch data of x and y values as need it 
+
 import numpy as np
 import matplotlib.pyplot as plt
 
-#Ingreso de datos
+#Data input
 x=np.array([70,63,72,60,66,70,74,65,62,67,65,68])
 y=np.array([155,150,180,135,156,168,178,160,132,145,139,152])
 n=len(x)
 
-#grafica inicial
+#First graph
 plt.figure(1)
 plt.plot(x,y,'ro')
 plt.grid(True)
-plt.title('Estatura/peso')
+plt.title('Datos ingresados')
 
-#Calculos
+#Calculations
 sqx=np.zeros(n)
 xy=np.zeros(n)
 z=np.zeros(n)
@@ -40,8 +42,8 @@ for i in range(n):
     prom=prom+e[i]
 prom=prom/n
 
-#Impresion de datos obtenidos
-print('\nTensión superficial\n')
+#Data output 
+print('\nTabla de datos\n')
 print('x\ty\tx^2\txy\tycalc\terror\n')
 for i in range (n):
     print(x[i],f'\t{y[i]:.2f}\t{sqx[i]:.2f}'
@@ -56,7 +58,7 @@ print(f'\nEcuación de ajuste: {a:.4f} x + {b:.4f}')
 print(f'\nPorcentaje de error: {prom:.2f}')
 print('\n')
 
-#segunda grafica
+#Second graph
 plt.figure(2)
 plt.plot(x,y,'ro',x,z,'b')
 plt.title('Ajuste lineal')

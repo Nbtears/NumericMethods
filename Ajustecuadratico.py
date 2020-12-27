@@ -3,7 +3,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-#Data input
+#Input data
 x=np.array([-3,-1,1,3,5,7])
 y=np.array([14,4,2,8,22,44])
 n=len(x)
@@ -52,7 +52,7 @@ for i in range(n):
         prom=prom+e[i]       
 prom=prom/n
 
-#Data output
+#Output data
 print('\nAjuste de datos\n')
 print('x\ty\tx^2\tx^3\tx^4\t\txy\tx^2y')
 for i in range (n):

@@ -3,7 +3,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-#Data input
+#Input data
 x=np.array([70,63,72,60,66,70,74,65,62,67,65,68])
 y=np.array([155,150,180,135,156,168,178,160,132,145,139,152])
 n=len(x)
@@ -42,7 +42,7 @@ for i in range(n):
     prom=prom+e[i]
 prom=prom/n
 
-#Data output 
+#Output data 
 print('\nTabla de datos\n')
 print('x\ty\tx^2\txy\tycalc\terror\n')
 for i in range (n):
